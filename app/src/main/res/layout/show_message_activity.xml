@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fff">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextsendermessage"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.33"
+        android:background="#f9f21f2e"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextNewMessage"
+        android:layout_below="@+id/editTextsendermessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="New Message"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#919191"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="47dp"
+        android:layout_height="34dp"
+        android:backgroundTint="#DCDCDF"
+        android:id="@+id/buttonsend"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/editTextNewMessage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editTextNewMessage"
+        android:layout_below="@+id/editTextsendermessage"
+        android:layout_toRightOf="@+id/editTextNewMessage"
+        android:background="@drawable/socialsendnow"
+        android:textColor="#DCDCDF"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextresponsemessage"
+        android:layout_below="@+id/editTextNewMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+</RelativeLayout>

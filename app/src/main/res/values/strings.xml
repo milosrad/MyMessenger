@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyMessenger</string>
+    <string name="textNewMessage">NewMessage</string>
+</resources>
